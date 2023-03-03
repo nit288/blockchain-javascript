@@ -1,0 +1,180 @@
+{
+	"info": {
+		"_postman_id": "fba7d45b-1855-4504-a41d-d9ca73ec5aaa",
+		"name": "Blockchain",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "21213981"
+	},
+	"item": [
+		{
+			"name": "transaction",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n    \"amount\": 15,\n    \"sender\": \"0xNITIN8773ece629603452d1FBDf6b6cA691fC3dE\",\n    \"recipient\": \"0xSATISH773ece629603452d1FBDf6b6cA691fC3dE\"\n\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:4001/transaction",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "4001",
+					"path": [
+						"transaction"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "register-node",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n    \"newNodeUrl\": \"http://localhost:4002\"\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:4001/register-node",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "4001",
+					"path": [
+						"register-node"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "register-and-broadcast-node",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n    \"newNodeUrl\": \"http://localhost:4005\"\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:4001/register-and-broadcast-node",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "4001",
+					"path": [
+						"register-and-broadcast-node"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "register-node-bulk",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n    \"allNetworkNodes\": [\n        \"http://localhost:4002\",\n        \"http://localhost:4003\",\n        \"http://localhost:4004\"\n    ]\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:4001/register-nodes-bulk",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "4001",
+					"path": [
+						"register-nodes-bulk"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "transaction/broadcast",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n    \"amount\": 15,\n    \"sender\": \"0xNITIN8773ece629603452d1FBDf6b6cA691fC3dE\",\n    \"recipient\": \"0xSATISH773ece629603452d1FBDf6b6cA691fC3dE\"\n\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:4002/transaction/broadcast",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "4002",
+					"path": [
+						"transaction",
+						"broadcast"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "http://localhost:4001/transaction/broadcast",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n    \"amount\": 24,\n    \"sender\": \"AAWW56HBHB465JHHJJB0099\",\n    \"recipient\": \"NNBB324DFJGNF8FDB4TTNJT5\"\n\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:4001/transaction/broadcast",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "4001",
+					"path": [
+						"transaction",
+						"broadcast"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}

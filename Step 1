@@ -1,0 +1,40 @@
+Step 1 
+
+run => npm run node_1 to start the node for four node
+
+http://localhost:4001/blockchain
+
+create a trensaction in one node
+http://localhost:4001/transaction
+
+
+that is not reflection to other nodes
+
+for that we have to make network broadcast
+
+http://localhost:4001/register-and-broadcast-node
+
+Now create a transaction brodcast to any node
+
+http://localhost:4001/transaction/broadcast
+
+
+Consensus for node 5
+
+http://localhost:4005/consensus
+
+
+
+
+http://localhost:4005/transaction/:transactionId
+http://localhost:4005/address/:address
+http://localhost:4005/block/:blockHash
+http://localhost:4001/block-explorer
+
+
+
+
+
+mine http://localhost:4001/mine
+
+
